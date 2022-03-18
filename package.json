@@ -1,0 +1,26 @@
+{
+	"name": "modulo2-projeto2-pokedex",
+	"version": "1.0.0",
+	"description": "Projeto 2 - Pokedex",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node index",
+		"dev": "nodemon index"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jeffersonluiz27/Modulo2-Projeto2-Pokedex.git"
+	},
+	"author": "Jefferson Silva",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/jeffersonluiz27/Modulo2-Projeto2-Pokedex/issues"
+	},
+	"homepage": "https://github.com/jeffersonluiz27/Modulo2-Projeto2-Pokedex#readme",
+	"dependencies": {
+		"ejs": "^3.1.6",
+		"express": "^4.17.3",
+		"nodemon": "^2.0.15"
+	}
+}
