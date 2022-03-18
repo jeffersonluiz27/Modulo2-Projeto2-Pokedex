@@ -2,7 +2,7 @@ const express = require('express'); //Importação do modulo Express
 const app = express(); //Referencia para chamar Express
 const path = require('path'); //Nescessario para adicionar arquivos estátivos.
 
-const port = 3000; //Porta do servidor
+const port = process.env.PORT || 3000; //Porta do servidor
 
 app.set('view engine', 'ejs'); //Definindo o Motor de visualização
 app.use(express.static(path.join(__dirname, 'public'))); //Indicando diretorio dos arquivos estáticos
