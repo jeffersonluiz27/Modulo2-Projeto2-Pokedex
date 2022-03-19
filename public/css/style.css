@@ -1,16 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@font-face {
+  font-family: Pokemon;
+  src: url('/font/Pokemon\ Solid.ttf');
+}
+
 *{
   margin: 0;
   padding: 0;
   font-family: 'Roboto', Arial;
 }
 
-body ,html {
+html {
   background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(255,0,0,1) 50%);
   background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 
+}
+
+body{
+  width: 90%;
   height: 100%;
-  width: 100%;
+  
+}
 
+div#titulo{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1rem 0 2rem 0;
+}
+
+div#titulo h1 {
+  font-family: Pokemon, Arial;
+  color: #ffcc01;
+  -webkit-text-stroke-width: 2px; /* largura da borda */
+  -webkit-text-stroke-color: #3264b0; /* cor da borda */
+  font-size: 4rem;
+  letter-spacing: .4rem;
+}
+
+div#titulo img{
+  width: 80px;
+  margin: 0 2.5rem 0 7rem;
+}
+
+section#main-section{
+  background-color: #fff;
+  box-shadow: .1rem .1rem 1rem .2rem;
+}
+
+section#content{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+
+}
+
+section.cards{
+  
+}
+
+section.cards img{
+  width: 20rem;
 }
