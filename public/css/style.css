@@ -51,19 +51,46 @@ div#titulo img{
 section#main-section{
   background-color: #fff;
   box-shadow: .1rem .1rem 1rem .2rem;
+  margin: 0 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+section#main-section nav{
+  width: 12rem;
+  align-self: center;
+  justify-self: center;
+}
+
+section#main-section nav ul{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+section#main-section nav ul li{
+  list-style-type: none;
 }
 
 section#content{
-  display:flex;
-  flex-direction: row;
-  justify-content:space-evenly;
-
-}
-
-section.cards{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  padding-bottom: 1.3rem;
   
+
 }
 
-section.cards img{
+section#content div.cards{
   width: 20rem;
+  box-shadow: 5px 5px 5px 5px #00000015;
+  padding: 1rem;
+}
+
+section#content div.cards img{
+  width: 100%;
+}
+
+section#content div.cards h2, .tipo{
+  margin-bottom: 1rem;
 }
