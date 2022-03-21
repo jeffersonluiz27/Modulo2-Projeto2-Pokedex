@@ -57,19 +57,37 @@ section#main-section{
 }
 
 section#main-section nav{
-  width: 12rem;
+  width: 100%;
   align-self: center;
   justify-self: center;
+  border-bottom: 1px solid #00000020;
+  background-color: #54b564;
 }
 
 section#main-section nav ul{
   display: flex;
-  justify-content: space-between;
-
+  justify-content: center;
 }
 
 section#main-section nav ul li{
   list-style-type: none;
+  width: 5rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border: 1px solid #00000015;
+}
+
+section#main-section nav ul li:hover{
+  background-color: #ffcc01;
+}
+
+section#main-section nav ul li a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  margin: 1rem;
 }
 
 section#content{

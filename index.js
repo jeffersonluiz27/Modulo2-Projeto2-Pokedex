@@ -50,6 +50,12 @@ app.get('/', (req, res) => {
 	res.render('index', { pokedex });
 }); //Arquivo a ser renderizado dentro da views
 
+app.get('/cadastro', (req, res) => {
+	res.render('cadastro');
+});
+
+app.post('/add', (req, res) => {});
+
 app.listen(port, () =>
 	console.log(`Servidor rodando em http://localhost:${port}`)
 ); //Liga o servidor na porta definida
