@@ -196,3 +196,64 @@ section#cadastro form button:hover{
   background-color: red;
   color: white;
 }
+
+section#detalhes{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+section#detalhes h2{
+  align-self: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+section#detalhes div#desc{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section#detalhes div#desc img{
+  background-color: #f2f2f285;
+  width: 25%;
+  border-radius: 1rem;
+  margin-right: 2rem;
+}
+
+section#detalhes div#desc div#box{
+  width: 35%;
+  align-self: center;
+  text-align: center;
+}
+
+section#detalhes div#desc div#box p{
+  font-weight: 400;
+  font-size: 1.3rem;
+
+}
+
+section#detalhes div#desc div#box div#atributos {
+  background-color: #30a7d7;
+  border-radius: 2rem;
+  padding: 2.5rem;
+  text-align: center;
+  margin-top: 2rem;
+
+}
+
+
+section#detalhes div#desc div#box div#atributos h3{
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: .2rem;
+}
+
+section#detalhes div#desc div#box div#atributos p{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: .8rem;
+}
+

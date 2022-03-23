@@ -1,39 +1,47 @@
 <%- include('header.ejs') %>
 
-  <section>
+  <section id="detalhes">
 
     <h2>
-      <%= pokemon.nome %> #<%= pokemon.numero %>
+      <%= pokemon.nome %>
+        <span> #<%= pokemon.numero %>
+        </span>
     </h2>
-    <img src="<%= pokemon.imagem %>" alt="Imagem do Pokemon">
-    <p>
-      <%= pokemon.descricao %>
-    </p>
-    <div>
-      <h3>Altura</h3>
-      <p>
-        <%= pokemon.altura %>
-      </p>
+    <div id="desc">
 
-      <h3>Peso</h3>
-      <p>
-        <%= pokemon.peso %>
-      </p>
+      <img src="<%= pokemon.imagem %>" alt="Imagem do Pokemon">
+      <div id="box">
+        <p>
+          <%= pokemon.descricao %>
+        </p>
+        <div id="atributos">
+        
+          <h3>Altura</h3>
+          <p>
+            <%= pokemon.altura %>
+          </p>
 
-      <h3>Categoria</h3>
-      <p>
-        <%= pokemon.categoria %>
-      </p>
+          <h3>Peso</h3>
+          <p>
+            <%= pokemon.peso %>
+          </p>
 
-      <h3>Habilidade</h3>
-      <p>
-        <%= pokemon.habilidade %>
-      </p>
+          <h3>Categoria</h3>
+          <p>
+            <%= pokemon.categoria %>
+          </p>
+
+          <h3>Habilidade</h3>
+          <p>
+            <%= pokemon.habilidade %>
+          </p>
+
+        </div>
+
+      </div>
 
     </div>
 
-
-
   </section>
 
-  <%- include('footer.ejs') %>
+<%- include('footer.ejs') %>
