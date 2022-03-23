@@ -13,7 +13,7 @@ const pokedex = [
 		imagem: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png',
 		descricao:
 			'There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.',
-		autura: `2' 04"`,
+		altura: `2' 04"`,
 		peso: '15.2 lbs',
 		categoria: 'Seed',
 		habilidade: 'Overgrow',
@@ -26,10 +26,10 @@ const pokedex = [
 		imagem: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png',
 		descricao:
 			'When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.',
-		Autura: `3' 03"`,
-		Peso: '28.7 lbs',
-		Categoria: 'Seed',
-		Habilidade: 'Overgrow',
+		altura: `3' 03"`,
+		peso: '28.7 lbs',
+		categoria: 'Seed',
+		habilidade: 'Overgrow',
 	},
 	{
 		id: 3,
@@ -39,7 +39,7 @@ const pokedex = [
 		imagem: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png',
 		descricao:
 			'Its plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.',
-		autura: `6' 07"`,
+		altura: `6' 07"`,
 		peso: '220.5 lbs',
 		categoria: 'Seed',
 		habilidade: 'Overgrow',
