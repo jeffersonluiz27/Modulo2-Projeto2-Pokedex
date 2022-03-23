@@ -6,6 +6,7 @@ const port = process.env.PORT || 3000; //Porta do servidor
 
 const pokedex = [
 	{
+		id: 1,
 		numero: 1,
 		nome: 'Bulbasaur',
 		tipo: 'Grass',
@@ -18,6 +19,7 @@ const pokedex = [
 		habilidade: 'Overgrow',
 	},
 	{
+		id: 2,
 		numero: 2,
 		nome: 'Ivysaur',
 		tipo: 'Grass',
@@ -30,6 +32,7 @@ const pokedex = [
 		Habilidade: 'Overgrow',
 	},
 	{
+		id: 3,
 		numero: 3,
 		nome: 'Venusaur',
 		tipo: 'Grass',
@@ -55,8 +58,15 @@ app.get('/cadastro', (req, res) => {
 	res.render('cadastro');
 });
 
+app.get('/detalhes/:id', (req, res) => {
+	const id = +req.params.id;
+	pokemon = pokedex.find((pokemon) => pokemon.id === id);
+	res.render('detalhes', { pokemon });
+});
+
 app.post('/add', (req, res) => {
 	const pokemon = req.body;
+	pokemon.id = pokedex.length + 1;
 	pokedex.push(pokemon);
 	res.redirect('/');
 });

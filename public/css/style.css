@@ -96,7 +96,6 @@ section#content{
   flex-wrap: wrap;
   margin-top: 1rem;
   padding-bottom: 1.3rem;
-  
 
 }
 
@@ -105,14 +104,41 @@ section#content div.cards{
   box-shadow: 5px 5px 5px 5px #00000015;
   padding: 1rem;
   margin-top: 2rem;
+  /* text-align: center; */
+  cursor: pointer;
+  transition: transform .2s ease-in-out;
+  
 }
 
-section#content div.cards img{
-  width: 100%;
+section#content div.cards:hover{
+  transform: scale(1.04);
 }
 
-section#content div.cards h2, .tipo{
+section#content div.cards a{
+  text-decoration: none;
+  color: black;
+}
+
+section#content div.cards a p#numero{
   margin-bottom: 1rem;
+  font-size: .8rem;
+  color: rgb(129, 127, 127);
+}
+
+section#content div.cards a img{
+  width: 100%;
+  background-color: #f2f2f285;
+  margin-bottom: .2rem;
+}
+
+section#content div.cards a h2{
+  margin-bottom: .5rem;
+}
+
+section#content div.cards a p.tipo span{
+  background-color: #54b564;
+  padding: .3rem;
+  font-size: .8rem;
 }
 
 section#cadastro{
