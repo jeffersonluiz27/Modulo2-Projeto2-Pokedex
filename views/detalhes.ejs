@@ -2,43 +2,46 @@
 
   <section id="detalhes">
 
-    <h2>Ivysaur <spam>#2</spam>
+    <h2>
+      <%= pokemon.nome %>
+        <spam>#<%= pokemon.numero %>
+        </spam>
     </h2>
 
     <p id="detipo">
-      Grass
+      <%= pokemon.tipo %>
     </p>
 
     <div id="desc-content">
 
       <div id="desc-img">
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" alt="Imagem do Pokemon">
+        <img src="<%= pokemon.imagem %>" alt="Imagem do Pokemon">
       </div>
 
       <div id="desc-box">
         <p>
-          When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.
+          <%= pokemon.descricao %>
         </p>
         <div id="atributos">
       
           <h3>Altura</h3>
           <p>
-            7' 30"
+            <%= pokemon.altura %>
           </p>
 
           <h3>Peso</h3>
           <p>
-            17.5 lbs
+            <%= pokemon.peso %>
           </p>
 
           <h3>Categoria</h3>
           <p>
-            Lizard
+            <%= pokemon.categoria %>
           </p>
 
           <h3>Habilidade</h3>
           <p>
-            Blaze
+            <%= pokemon.habilidade %>
           </p>
 
         </div>
