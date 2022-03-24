@@ -3,6 +3,7 @@ const app = express(); //Referencia para chamar Express
 const path = require('path'); //Nescessario para adicionar arquivos estátivos.
 
 const port = process.env.PORT || 3000; //Porta do servidor
+let message = ''; //Mensagem de sucesso cadastro
 
 const pokedex = [
 	{
@@ -51,6 +52,10 @@ app.use(express.static(path.join(__dirname, 'public'))); //Indicando diretorio d
 app.use(express.urlencoded());
 
 app.get('/', (req, res) => {
+	setTimeout(() => {
+		message = '';
+	}, 3000);
+
 	res.render('index', { pokedex });
 }); //Arquivo a ser renderizado dentro da views
 
@@ -68,6 +73,7 @@ app.post('/new', (req, res) => {
 	const pokemon = req.body;
 	pokemon.id = pokedex.length + 1;
 	pokedex.push(pokemon);
+	message = `Pokemon ${pokemon.nome} cadastrado com sucesso!`;
 	res.redirect('/');
 });
 

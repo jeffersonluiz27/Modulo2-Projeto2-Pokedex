@@ -136,7 +136,7 @@ section#content div.cards a h2{
 }
 
 section#content div.cards a p.tipo span{
-  background-color: #54b564;
+  border: 1px solid #54b564;
   padding: .3rem;
   font-size: .8rem;
 }
@@ -154,6 +154,7 @@ section#cadastro h2{
   text-align: center;
   padding-bottom: 2rem;
   font-size: 2rem;
+  font-weight: 400;
 }
 
 section#cadastro form{
@@ -211,7 +212,7 @@ section#detalhes h2{
 
 section#detalhes p#detipo{
   margin-bottom: 3rem;
-  background-color: #54b564;
+  border: 1px solid #54b564;
   padding: .3rem;
   font-size: 1rem;
   
@@ -304,6 +305,10 @@ footer p a{
   section#detalhes div#desc-content div#desc-box {
     width: 100%;
     text-align: center;
+  }
+
+  section#cadastro form button{
+    width: 6rem;
   }
 
 }
