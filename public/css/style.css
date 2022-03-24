@@ -14,8 +14,6 @@
 html {
   background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(255,0,0,1) 50%);
   background-repeat: no-repeat;
-  /* height: 100vh;
-  width: 100vw; */
   display: flex;
   justify-content: center;
 
@@ -47,6 +45,8 @@ div#titulo img{
   width: 80px;
   margin: 0 2.5rem 0 7rem;
 }
+
+
 
 section#main-section{
   background-color: #fff;
@@ -201,6 +201,70 @@ section#detalhes{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
+}
+
+section#detalhes h2{
+  font-size: 2rem;
+  margin-bottom: .3rem;
+}
+
+section#detalhes p#detipo{
+  margin-bottom: 3rem;
+  background-color: #54b564;
+  padding: .3rem;
+  font-size: 1rem;
+  
+}
+
+section#detalhes div#desc-content{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+section#detalhes div#desc-content div#desc-img{
+  margin-bottom: 1rem;
+}
+
+section#detalhes div#desc-content div#desc-img img{
+  background-color: #f2f2f285;
+  width:100%;
+  border-radius: 1rem;
+  margin-right: 2rem;
+}
+
+section#detalhes div#desc-content div#desc-box{
+  width: 20rem;
+  text-align: center;
+  margin: 1.5rem;
+}
+
+section#detalhes div#desc-content div#desc-box p{
+  font-weight: 400;
+  font-size: 1.3rem;  
+}
+
+section#detalhes div#desc-content div#desc-box div#atributos {
+  background-color: #30a7d7;
+  border-radius: 2rem;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+
+}
+
+section#detalhes div#desc-content div#desc-box div#atributos h3{
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: .2rem;
+}
+
+section#detalhes div#desc-content div#desc-box div#atributos p{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: .8rem;
 }
 
 footer{
@@ -224,4 +288,22 @@ footer p a{
   text-decoration: none;
   color: #000000;
   font-weight: 600;
+}
+
+
+@media only screen and (max-width: 600px){
+  div#titulo img{
+    width: 60px;
+    margin: 0 1rem 0 1rem;
+  }
+
+  div#titulo h1{
+    font-size: 2rem;
+  }
+
+  section#detalhes div#desc-content div#desc-box {
+    width: 100%;
+    text-align: center;
+  }
+
 }
