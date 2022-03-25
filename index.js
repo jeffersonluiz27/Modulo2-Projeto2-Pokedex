@@ -54,7 +54,7 @@ app.use(express.urlencoded());
 app.get('/', (req, res) => {
 	setTimeout(() => {
 		message = '';
-	}, 3000);
+	}, 5000);
 
 	res.render('index', { pokedex, message });
 }); //Arquivo a ser renderizado dentro da views
