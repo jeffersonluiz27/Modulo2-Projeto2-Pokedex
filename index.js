@@ -56,7 +56,7 @@ app.get('/', (req, res) => {
 		message = '';
 	}, 3000);
 
-	res.render('index', { pokedex });
+	res.render('index', { pokedex, message });
 }); //Arquivo a ser renderizado dentro da views
 
 app.get('/cadastro', (req, res) => {

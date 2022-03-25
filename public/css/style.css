@@ -291,6 +291,35 @@ footer p a{
   font-weight: 600;
 }
 
+div#mensagem{
+  padding: 1rem;
+  background-color: rgb(197, 255, 214);
+  color: #004d04;
+  position: fixed;
+  top: 2rem;
+  right: 1rem;
+  z-index: 100;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 1px 5px black;
+}
+
+span#close {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: .3s;
+  margin-left: .5rem;
+}
+
+span#close:hover{
+  color: rgb(255, 0, 0);
+  transform: scale(1.5);
+}
 
 @media only screen and (max-width: 600px){
   div#titulo img{
@@ -309,6 +338,11 @@ footer p a{
 
   section#cadastro form button{
     width: 6rem;
+  }
+
+  div#mensagem{
+    left: 1rem;
+    width: auto;
   }
 
 }

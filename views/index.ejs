@@ -1,4 +1,13 @@
 <%- include('partials/header.ejs') %>
+      <% if(message !="" ) { %>
+        <div id="mensagem">
+          <p>
+            <%= message %>
+          </p>
+          <span id="close">&times;</span>
+        </div>
+        <% } %>
+
         <% pokedex.forEach((pokemon)=> { %>
         
           <div class="cards">
